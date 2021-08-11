@@ -1,0 +1,79 @@
+#CREATE DATABASE TP2;
+#CREATE TABLE TP2.profile_media(
+#      id MEDIUMINT NOT NULL AUTO_INCREMENT,
+#      name CHAR(55) NOT NULL,
+#      date DATETIME NOT NULL,
+#      PRIMARY KEY (id)
+#);
+#CREATE TABLE TP2.films(
+#      id MEDIUMINT NOT NULL AUTO_INCREMENT,
+#      realisateur_film CHAR(55),
+#      profile_media_id MEDIUMINT,
+#      PRIMARY KEY(id),
+#      FOREIGN KEY(profile_media_id) REFERENCES profile_media(id)
+#);
+#CREATE TABLE TP2.series(
+#      id MEDIUMINT NOT NULL AUTO_INCREMENT,
+#      genre_serie CHAR(55),
+#      profile_media_id MEDIUMINT,
+#      PRIMARY KEY(id),
+#      FOREIGN KEY(profile_media_id) REFERENCES profile_media(id)
+#);
+#CREATE TABLE TP2.musiques(
+#      id MEDIUMINT NOT NULL AUTO_INCREMENT,
+#      album_musique CHAR(55),
+#      profile_media_id MEDIUMINT,
+#      PRIMARY KEY(id),
+#      FOREIGN KEY(profile_media_id) REFERENCES profile_media(id)
+#);
+#CREATE TABLE TP2.utilisateurs(
+#      id MEDIUMINT NOT NULL AUTO_INCREMENT,
+#      password CHAR(55),
+#      email CHAR(80),
+#      PRIMARY KEY(id)
+#);
+#DROP TABLE TP2.films_utilisateurs;
+#ALTER TABLE TP2.utilisateurs MODIFY id CHAR(55);
+#CREATE TABLE TP2.films_utilisateurs(
+#      films_id MEDIUMINT,
+#      utilisateurs_id CHAR(55),
+#      FOREIGN KEY(films_id) REFERENCES films(id),
+#      FOREIGN KEY(utilisateurs_id) REFERENCES utilisateurs(id),
+#      PRIMARY KEY(films_id, utilisateurs_id)
+#);
+#CREATE TABLE TP2.series_utilisateurs(
+#      series_id MEDIUMINT,
+#      utilisateurs_id CHAR(55),
+#      FOREIGN KEY(series_id) REFERENCES series(id),
+#      FOREIGN KEY(utilisateurs_id) REFERENCES utilisateurs(id),
+#      PRIMARY KEY(series_id, utilisateurs_id)
+#);
+#CREATE TABLE TP2.musiques_utilisateurs(
+#      musiques_id MEDIUMINT,
+#      utilisateurs_id CHAR(55),
+#      FOREIGN KEY(musiques_id) REFERENCES musiques(id),
+#      FOREIGN KEY(utilisateurs_id) REFERENCES utilisateurs(id),
+#      PRIMARY KEY(musiques_id, utilisateurs_id),
+#      favoris BOOLEAN
+#);
+#ALTER TABLE TP2.films_utilisateurs ADD favoris BOOLEAN;
+#ALTER TABLE TP2.series_utilisateurs ADD favoris BOOLEAN;
+#CREATE TABLE TP2.groupes(
+#      id MEDIUMINT NOT NULL AUTO_INCREMENT,
+#      nom_groupe CHAR(55),
+#      description CHAR(55),
+#      PRIMARY KEY (id)
+#);
+#CREATE TABLE TP2.groupes_utilisateurs(
+#	  groupes_id MEDIUMINT,
+#      utilisateurs_id CHAR(55),
+#      FOREIGN KEY(groupes_id) REFERENCES groupes(id),
+#      FOREIGN KEY(utilisateurs_id) REFERENCES utilisateurs(id),
+#      PRIMARY KEY(groupes_id, utilisateurs_id)
+#);
+coche_blanche
+yeux
+alléluia
+Réagir
+Répondre
+
