@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="../CSS/compte.css">
     <link rel="stylesheet" href="../CSS/style.css">
     <script src="../JS/compte.js"></script>
-
 </head>
+
 <body>
 
     <div class="fullwidth">
 
-    <form action="#" method="GET" name="inscription" class="container">
+    <form action="#" method="GET" name="inscription" class="container,col-xl-8">
         <header>
             <h2>Inscrivez-vous ou connectez-vous</h2>
         </header>
@@ -42,30 +42,31 @@
                     <div class="col-xl-12">
                         <label for="pwd">Mot de passe</label>
                         <input type="password" name="mdp" id="pwd" name="pwd"></input>
-                        </form>
                     </div>
                     <div class="col-xl-12">
                         <label for="pwd">Confirmet le mot de passe</label>
                         <input type="password" name="pwd" id="pwd" name="pwd"></input>
-                        </form>
-                    </div>
-                    <div >
-                        <input type="checkbox" id="CG" name="CG" value="">
-                        <label for="CG"> J'accepte ls conditions générales</label>
                     </div>
                     <div class="col-xl-12">
-                        <input type="submit" value="Envoyer">
+                        <input type="checkbox" id="CG" name="CG" value="CG" class="checkbox">
+                        <label for="CG" class="checkbox"> J'accepte les conditions générales</label>
+                    </div>
+                    <div class="col-xl-12">
+                        <input type="submit" value="Créer un compte">
                     </div>
             </div>
-            
+                    
     </form>
-    <div class="container">
-        <header>
-            <h3>Espace Client</h3> 
-        </header>
 
-        <form action="#" method="GET" name="connexion" class="aside">
-            <div class="aside">                
+        
+
+    <form action="#" method="GET" name="connexion" class="aside, col-xl-4">
+        
+            <div class="row">  
+                <h3 class="col-xl-12">Espace Client</h3>
+                
+                <img src="../images/utilisateur.png" alt="utilisateur">
+                 
                 <div class="col-xl-12">
                     <label for="identifiant">Identifiant</label>
                     <input type="text" id="identifiant" name="identifiant" value=""> 
@@ -73,18 +74,12 @@
                 <div class="col-xl-12">
                     <label for="pwd">Mot de passe</label>
                     <input type="password" name="mdp" id="pwd" name="pwd"></input>
-                    </form>
                 </div>
-                <div>
-                <input type="button" onclick="submit" value="Login">
+                <div id="button" class="col-xl-5">
+                    <input type="button" onclick="submit" value="Login">
                 </div>
-       </div>
-        
-        </form>
-
-
-
-    </div>
-    </div>   
+            </div>
+    </form>
+    </div>      
 
 </body>
