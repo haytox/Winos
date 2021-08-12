@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Espace Client</title>
+    <meta name="description" content="Cette espace permet à l'utilisateur de créer son compte">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../CSS/compte.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <script src="../JS/compte.js"></script>
+
+</head>
+<body>
+
+    <div class="fullwidth">
+
+    <form action="#" method="GET" name="inscription" class="container">
+        <header>
+            <h2>Inscrivez-vous ou connectez-vous</h2>
+        </header>
+            <div class="row">                
+                    <div class="col-xl-12">
+                        <label for="nom">Nom</label>
+                        <input type="text" id="nom" name="nom" value=""> 
+                    </div>
+
+                    <div class="col-xl-12">
+                        <label for="prenom">Prénom</label>
+                        <input type="text" id="prenom" name="prenom" value=""> 
+                    </div>
+
+                    <div class="col-xl-12">
+                        <label for="date">Date de naissance</label>
+                        <input type="date" id="date" name="date" value="">
+                    </div>
+
+                    <div class="col-xl-12">
+                        <label for="email">Téléphone</label>
+                        <input type="text" id="email" name="email" value=""> 
+                    </div>
+
+                    <div class="col-xl-12">
+                        <label for="pwd">Mot de passe</label>
+                        <input type="password" name="mdp" id="pwd" name="pwd"></input>
+                        </form>
+                    </div>
+                    <div class="col-xl-12">
+                        <label for="pwd">Confirmet le mot de passe</label>
+                        <input type="password" name="pwd" id="pwd" name="pwd"></input>
+                        </form>
+                    </div>
+                    <div >
+                        <input type="checkbox" id="CG" name="CG" value="">
+                        <label for="CG"> J'accepte ls conditions générales</label>
+                    </div>
+                    <div class="col-xl-12">
+                        <input type="submit" value="Envoyer">
+                    </div>
+            </div>
+            
+    </form>
+    <div class="container">
+        <header>
+            <h3>Espace Client</h3> 
+        </header>
+
+        <form action="#" method="GET" name="connexion" class="aside">
+            <div class="aside">                
+                <div class="col-xl-12">
+                    <label for="identifiant">Identifiant</label>
+                    <input type="text" id="identifiant" name="identifiant" value=""> 
+                </div>
+                <div class="col-xl-12">
+                    <label for="pwd">Mot de passe</label>
+                    <input type="password" name="mdp" id="pwd" name="pwd"></input>
+                    </form>
+                </div>
+                <div>
+                <input type="button" onclick="submit" value="Login">
+                </div>
+       </div>
+        
+        </form>
+
+
+
+    </div>
+    </div>   
+
+</body>
